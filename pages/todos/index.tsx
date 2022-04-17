@@ -99,7 +99,7 @@ export default function Todos() {
           {todos.map((todo: todo) => (
             <div
               key={todo._id}
-              className="p-2 sm:p-4 rounded-lg sm:rounded-xl bg-[#ebf0f9] w-full shadow-md sm:shadow-lg select-none flex items-center justify-between"
+              className="py-2 px-4 sm:p-4 rounded-lg sm:rounded-xl bg-[#ebf0f9] w-full shadow-md sm:shadow-lg select-none flex items-center justify-between"
             >
               <h3 className="text-sm text-ellipsis overflow-hidden sm:text-md font-bold text-[#3e6397]">
                 {todo.title}
@@ -112,9 +112,9 @@ export default function Todos() {
                 whileTap={{ scale: 0.9 }}
               >
                 <div className="group ">
-                  <CheckCircleIconSolid className="hidden w-6 h-6 sm:w-8 sm:h-8 text-green-500 group-hover:block" />
+                  <CheckCircleIconSolid className="hidden w-5 h-5 sm:w-7 sm:h-7 text-green-500 group-hover:block" />
 
-                  <CheckCircleIconOutline className="w-6 h-6 sm:w-8 sm:h-8 text-gray-500 group-hover:hidden" />
+                  <CheckCircleIconOutline className="w-5 h-5 sm:w-7 sm:h-7 text-gray-500 group-hover:hidden" />
                 </div>
               </motion.button>
             </div>

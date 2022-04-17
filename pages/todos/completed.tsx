@@ -44,7 +44,7 @@ export default function CompletedTodos() {
   };
 
   return (
-    <div className="py-5 px-5 md:py-10 md:px-20 w-full overflow-y-auto overflow-x-hidden select-none">
+    <div className="py-5 px-5 md:py-10 md:px-20 w-full overflow-y-auto overflow-x-hidden select-none flex flex-col h-full">
       <div className="flex items-center justify-between pb-7 text-[#3e6397] ">
         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold">
           ToDo{" "}
@@ -61,7 +61,7 @@ export default function CompletedTodos() {
           {todos.map((todo: todo) => (
             <div
               key={todo._id}
-              className="p-2 sm:p-4 rounded-lg sm:rounded-xl bg-[#ebf0f9] w-full shadow-md sm:shadow-lg select-none flex items-center justify-between"
+              className="py-2 px-4 sm:p-4 rounded-lg sm:rounded-xl bg-[#ebf0f9] w-full shadow-md sm:shadow-lg select-none flex items-center justify-between"
             >
               <h3 className="text-sm text-ellipsis overflow-hidden sm:text-md font-bold text-[#3e6397]">
                 {todo.title}
@@ -74,9 +74,9 @@ export default function CompletedTodos() {
                 whileTap={{ scale: 0.9 }}
               >
                 <div className="group ">
-                  <TrashIconSolid className="hidden w-4 h-4 sm:w-6 sm:h-6 text-red-500 group-hover:block" />
+                  <TrashIconSolid className="hidden w-5 h-5 sm:w-7 sm:h-7 text-red-500 group-hover:block" />
 
-                  <TrashIconOutline className="w-4 h-4 sm:w-6 sm:h-6 text-gray-500 group-hover:hidden" />
+                  <TrashIconOutline className="w-5 h-5 sm:w-7 sm:h-7 text-gray-500 group-hover:hidden" />
                 </div>
               </motion.button>
             </div>
