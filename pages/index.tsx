@@ -40,73 +40,53 @@ const Home: myNextPage = () => {
 
       <hr className="py-5" />
 
-      <div className="font-medium text-[#3e6397] grid grid-flow-row md:grid-cols-2 gap-5">
-        <div className="p-2">
+      <div className="m-auto w-[90%]">
+        <div className="pb-5 font-medium text-xl text-[#3e6397] leading-loose tracking-wide md:tracking-wider text-center lg:w-[80%] lg:m-auto">
           A simple ToDo App made with <span className="font-bold">Next.js</span>{" "}
           and <span className="font-bold">TailwindCSS</span>. It allows you to
-          create, edit, and delete todo items.
-        </div>
-        <div className="flex items-center justify-center gap-5">
-          <div className="h-14 w-14 lg:h-20 lg:w-20 relative flex-shrink-0">
-            <Image
-              src="/icons/nextjs.svg"
-              alt="Picture of bhavyansh jain"
-              layout="fill"
-            />
-          </div>
-
-          <span className="text-4xl font-extralight">+</span>
-
-          <div className="h-14 w-14 lg:h-20 lg:w-20 relative flex-shrink-0">
-            <Image
-              src="/icons/tailwindcss.svg"
-              alt="Picture of bhavyansh jain"
-              layout="fill"
-            />
-          </div>
+          create and delete todo items.
         </div>
 
-        <div className="flex items-center justify-center gap-5">
-          <div className="h-14 w-14 lg:h-20 lg:w-40 relative flex-shrink-0 hidden lg:block">
-            <Image src="/icons/mongodb.svg" alt="MongoDB logo" layout="fill" />
+        <div className="flex flex-col items-center justify-evenly py-5 gap-5">
+          <div className="flex items-center justify-evenly flex-shrink-0 w-full">
+            <div className="h-14 w-14 lg:h-20 lg:w-20 relative flex-shrink-0">
+              <Image src="/icons/nextjs.svg" alt="Nextjs logo" layout="fill" />
+            </div>
+
+            <div className="h-14 w-14 lg:h-20 lg:w-20 relative flex-shrink-0">
+              <Image
+                src="/icons/tailwindcss.svg"
+                alt="TailwindCSS logo"
+                layout="fill"
+              />
+            </div>
           </div>
 
-          <div className="h-14 w-14 lg:h-20 lg:w-20 relative flex-shrink-0 lg:hidden">
-            <Image
-              src="/icons/mongodb-mini.svg"
-              alt="MongoDB logo"
-              layout="fill"
-              className="hidden lg:block"
-            />
+          <div className="flex items-center justify-evenly flex-shrink-0 w-full">
+            <div className="h-12 w-12 lg:h-16 lg:w-16 relative flex-shrink-0">
+              <Image
+                src="/icons/nextAuth.png"
+                alt="NextAuth logo"
+                layout="fill"
+              />
+            </div>
+
+            <div className="h-20 w-20 lg:h-24 lg:w-24 relative flex-shrink-0">
+              <Image
+                src="/icons/mongodb-mini.svg"
+                alt="MongoDB logo"
+                layout="fill"
+              />
+            </div>
+
+            <div className="h-12 w-12 lg:h-16 lg:w-16 relative flex-shrink-0">
+              <Image
+                src="/icons/typescript.svg"
+                alt="Typescript Logo"
+                layout="fill"
+              />
+            </div>
           </div>
-
-          <span className="text-4xl font-extralight">+</span>
-
-          <div className="h-14 w-14 lg:h-20 lg:w-20 relative flex-shrink-0">
-            <Image
-              src="/icons/nextAuth.png"
-              alt="next Auth logo"
-              layout="fill"
-            />
-          </div>
-        </div>
-
-        <div className="p-2">
-          Your data is completely encrypted with{" "}
-          <span className="font-bold">crypto-js</span> and stored in{" "}
-          <span className="font-bold">MongoDB Atlas</span>. <br />
-          <br /> Google login is provided with the help of{" "}
-          <span className="font-bold">Next-Auth</span>. Designed with{" "}
-          <span className="font-bold"> TailwindCSS </span>
-          and animated with <span className="font-bold"> Framer Motion</span>.
-          Coded in <span className="font-bold">Typescript</span>{" "}
-          <p className="h-5 w-5 relative inline-block px-3 -mb-1">
-            <Image
-              src="/icons/typescript.svg"
-              alt="Typescript Logo"
-              layout="fill"
-            />
-          </p>
         </div>
       </div>
     </div>

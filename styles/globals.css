@@ -39,4 +39,12 @@
       rgba(103, 228, 198, 1) 100%
     );
   }
+
+  #something {
+    display: none;
+  }
+
+  #something:target {
+    display: block;
+  }
 }
