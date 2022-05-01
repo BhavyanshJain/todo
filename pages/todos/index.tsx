@@ -1,6 +1,6 @@
 import { CheckCircleIcon as CheckCircleIconOutline } from "@heroicons/react/outline";
 import { CheckCircleIcon as CheckCircleIconSolid } from "@heroicons/react/solid";
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { useSession } from "next-auth/react";
 import { todo } from "../../types/myTypes";
 import { useRouter } from "next/router";
@@ -11,7 +11,6 @@ export default function Todos() {
   const router = useRouter();
   const { status } = useSession();
 
-  const textInput = useRef(null);
   const [todos, setTodos] = useState([]);
   const [inputTitle, setInputTitle] = useState("");
 
@@ -50,8 +49,6 @@ export default function Todos() {
   const handleCreate = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setInputTitle("");
-    // @ts-ignore: Object is possibly 'null'.
-    textInput.current.disabled = true;
 
     const data = {
       title: inputTitle,
@@ -61,13 +58,7 @@ export default function Todos() {
     await axios
       .post("/api/todos", data)
       .then(() => fetchTodos())
-      .catch((err) => console.log(err))
-      .finally(() => {
-        // @ts-ignore: Object is possibly 'null'.
-        textInput.current.disabled = false;
-        // @ts-ignore: Object is possibly 'null'.
-        textInput.current.focus();
-      });
+      .catch((err) => console.log(err));
   };
 
   return (
@@ -88,7 +79,6 @@ export default function Todos() {
           type="text"
           maxLength={125}
           autoFocus={true}
-          ref={textInput}
           value={inputTitle}
           onChange={(e) => setInputTitle(e.target.value)}
           className="w-full border-0 rounded-lg bg-gradient-to-br from-[#e2f3f9] to-transparent backdrop-filter backdrop-blur-xl border-none focus:ring-0"
