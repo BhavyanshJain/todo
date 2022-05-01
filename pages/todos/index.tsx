@@ -114,7 +114,7 @@ export default function Todos() {
               whileTap={{ scale: 0.9 }}
             >
               <div className="group">
-                <CheckCircleIconSolid className="hidden w-5 h-5 sm:w-7 sm:h-7 text-green-500 group-hover:block something" />
+                <CheckCircleIconSolid className="hidden w-5 h-5 sm:w-7 sm:h-7 text-green-500 group-hover:block" />
                 <CheckCircleIconOutline className="w-5 h-5 sm:w-7 sm:h-7 text-gray-500 group-hover:hidden" />
               </div>
             </motion.button>
