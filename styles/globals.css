@@ -16,7 +16,7 @@
 
   /* Track */
   ::-webkit-scrollbar-track {
-    @apply rounded-br-3xl lg:rounded-r-3xl bg-white bg-opacity-10 backdrop-filter backdrop-blur-xl;
+    @apply rounded-br-3xl lg:rounded-r-3xl;
   }
 
   /* Handle */

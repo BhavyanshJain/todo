@@ -41,20 +41,20 @@ export default function SidePanel({}: Props) {
       <div className="lg:pt-20 text-base text-[#00b7ff] grid grid-flow-col lg:grid-flow-row gap-2 lg:gap-10 content-start font-medium">
         <motion.button
           className="flex items-center cursor-pointer"
-          onClick={() => router.replace("/todos/completed")}
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-        >
-          <ClipboardCheckIcon className="w-8 h-8 lg:w-12 lg:h-12" />
-        </motion.button>
-
-        <motion.button
-          className="flex items-center cursor-pointer"
           onClick={() => router.replace("/todos")}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
           <ClipboardListIcon className="w-8 h-8 lg:w-12 lg:h-12" />
+        </motion.button>
+
+        <motion.button
+          className="flex items-center cursor-pointer"
+          onClick={() => router.replace("/todos/completed")}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          <ClipboardCheckIcon className="w-8 h-8 lg:w-12 lg:h-12" />
         </motion.button>
       </div>
     </div>

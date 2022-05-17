@@ -12,6 +12,7 @@ import {
 type Data = {
   message: string;
   todos?: todo[];
+  todo?: todo;
 };
 
 export default async function handler(
@@ -83,9 +84,10 @@ async function createTodo(
       isCompleted: reqBodyTodo.isCompleted,
     });
 
-    await Todo.create(newTodo);
+    const todo = await Todo.create(newTodo);
+    todo.title = decryptText(todo.title, email);
 
-    res.status(201).json({ message: "Success!" });
+    res.status(201).json({ message: "Success!", todo: todo });
   } catch (err) {
     return res.status(400).json({
       message: "Something went wrong! Details: " + JSON.stringify(err),
