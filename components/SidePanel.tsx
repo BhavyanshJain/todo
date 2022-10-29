@@ -1,7 +1,10 @@
 import { signOut, useSession } from "next-auth/react";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
-import { ClipboardListIcon, ClipboardCheckIcon } from "@heroicons/react/solid";
+import {
+  ClipboardDocumentListIcon,
+  ClipboardDocumentCheckIcon,
+} from "@heroicons/react/24/solid";
 
 type Props = {};
 
@@ -45,7 +48,7 @@ export default function SidePanel({}: Props) {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
-          <ClipboardListIcon className="w-8 h-8 lg:w-12 lg:h-12" />
+          <ClipboardDocumentListIcon className="w-8 h-8 lg:w-12 lg:h-12" />
         </motion.button>
 
         <motion.button
@@ -54,7 +57,7 @@ export default function SidePanel({}: Props) {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
-          <ClipboardCheckIcon className="w-8 h-8 lg:w-12 lg:h-12" />
+          <ClipboardDocumentCheckIcon className="w-8 h-8 lg:w-12 lg:h-12" />
         </motion.button>
       </div>
     </div>

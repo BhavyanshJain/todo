@@ -1,5 +1,5 @@
 import { useSession, signIn, getProviders, getSession } from "next-auth/react";
-import { ArrowLeftIcon } from "@heroicons/react/solid";
+import { ArrowLeftIcon } from "@heroicons/react/24/solid";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";

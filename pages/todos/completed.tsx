@@ -1,5 +1,5 @@
-import { TrashIcon as TrashIconOutline } from "@heroicons/react/outline";
-import { TrashIcon as TrashIconSolid } from "@heroicons/react/solid";
+import { TrashIcon as TrashIconOutline } from "@heroicons/react/24/outline";
+import { TrashIcon as TrashIconSolid } from "@heroicons/react/24/solid";
 import React, { useCallback, useEffect, useState } from "react";
 import { useSession } from "next-auth/react";
 import { todo } from "../../types/myTypes";

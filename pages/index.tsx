@@ -50,14 +50,14 @@ const Home: myNextPage = () => {
         <div className="flex flex-col items-center justify-evenly py-5 gap-5">
           <div className="flex items-center justify-evenly flex-shrink-0 w-full">
             <div className="h-14 w-14 lg:h-20 lg:w-20 relative flex-shrink-0">
-              <Image src="/icons/nextjs.svg" alt="Nextjs logo" layout="fill" />
+              <Image src="/icons/nextjs.svg" alt="Nextjs logo" fill={true} />
             </div>
 
             <div className="h-14 w-14 lg:h-20 lg:w-20 relative flex-shrink-0">
               <Image
                 src="/icons/tailwindcss.svg"
                 alt="TailwindCSS logo"
-                layout="fill"
+                fill={true}
               />
             </div>
           </div>
@@ -67,7 +67,7 @@ const Home: myNextPage = () => {
               <Image
                 src="/icons/nextAuth.png"
                 alt="NextAuth logo"
-                layout="fill"
+                fill={true}
               />
             </div>
 
@@ -75,7 +75,7 @@ const Home: myNextPage = () => {
               <Image
                 src="/icons/mongodb-mini.svg"
                 alt="MongoDB logo"
-                layout="fill"
+                fill={true}
               />
             </div>
 
@@ -83,7 +83,7 @@ const Home: myNextPage = () => {
               <Image
                 src="/icons/typescript.svg"
                 alt="Typescript Logo"
-                layout="fill"
+                fill={true}
               />
             </div>
           </div>

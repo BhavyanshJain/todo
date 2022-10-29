@@ -1,5 +1,5 @@
-import { CheckCircleIcon as CheckCircleIconOutline } from "@heroicons/react/outline";
-import { CheckCircleIcon as CheckCircleIconSolid } from "@heroicons/react/solid";
+import { CheckCircleIcon as CheckCircleIconOutline } from "@heroicons/react/24/outline";
+import { CheckCircleIcon as CheckCircleIconSolid } from "@heroicons/react/24/solid";
 import React, { useCallback, useEffect, useState } from "react";
 import { useSession } from "next-auth/react";
 import { todo } from "../../types/myTypes";
