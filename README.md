@@ -163,7 +163,7 @@ Project Link: [https://github.com/BhavyanshJain/todo](https://github.com/Bhavyan
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
-[license-shield]: https://img.shields.io/github/license/BhavyanshJain/todo?style=flat
+[license-shield]:  https://img.shields.io/github/license/BhavyanshJain/todo
 [license-url]: https://github.com/BhavyanshJain/todo/blob/master/LICENSE
 [next.js]: https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [nextjs-url]: https://nextjs.org/
