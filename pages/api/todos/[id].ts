@@ -44,7 +44,7 @@ export default async function handler(
 async function updateATodo(
   req: NextApiRequest,
   res: NextApiResponse<Data>,
-  id: string | string[],
+  id: string | string[] | undefined,
   email: string,
   hashedEmail: string
 ) {
@@ -80,7 +80,7 @@ async function updateATodo(
 
 async function deleteATodo(
   res: NextApiResponse<Data>,
-  id: string | string[],
+  id: string | string[] | undefined,
   hashedEmail: string
 ) {
   try {
